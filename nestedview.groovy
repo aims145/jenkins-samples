@@ -13,7 +13,7 @@ nestedView('project-a') {
             }
         }
         buildPipelineView('pipeline') {
-            selectedJob('project-a-compile')
+            selectedJob('buildjob')
         }
     }
 }

@@ -1,6 +1,6 @@
 node {  
     stage('Build') { 
-        // Hi i am amrit sharma
+        script: 'echo "hello"'
     }
     stage('Test') { 
         // 

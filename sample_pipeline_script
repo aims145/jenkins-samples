@@ -1,9 +1,8 @@
 pipeline {
-    agent { docker }
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                bat label: '', script: 'docker run -i --rm --name my-maven-project maven:3.5.4-jdk-8 mvn --version'
             }
         }
     }
